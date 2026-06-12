@@ -1,0 +1,23 @@
+student=[]
+for _ in range(int(input())):
+  name=input()
+  score=float(input())
+  student.append([name,score])
+
+  
+sorted_scores=set()
+for name,score in student:
+  sorted_scores.add(score)
+
+unique_score=sorted(sorted_scores)
+second_lowest_score=unique_score[1]
+
+
+
+result = sorted(name for name, score in student if score == second_lowest_score)
+for name in result:
+    print(name)
+
+
+#inputs=  [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
+#output = 37.21
