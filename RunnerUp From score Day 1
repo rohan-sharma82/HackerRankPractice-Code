@@ -1,0 +1,14 @@
+n = int(input())
+arr = list(map(int, input().split()))
+    
+arr.sort()
+q=set(arr)
+sorted_list=list(q)
+print(sorted_list[-2])
+
+
+#sample input 5
+#2 3 6 6 5
+
+#output - 5
+
